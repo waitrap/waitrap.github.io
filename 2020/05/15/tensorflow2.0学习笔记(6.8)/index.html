@@ -24,24 +24,26 @@
     <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            Hello WA_I
+            tensorflow2.0学习笔记(6.8)
         </p>
         <hr>
     </div>
     <div class="post-content">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>#tensorflow2.0学习笔记(6.8)</p>
+<p>##1.函数的使用方法<br><code>keras.utils.get_file(fname,origin)</code></p>
+<p>&emsp;<code>fname</code>下载后文件保存的名字<br>&emsp;<code>origin</code>下载的地址链接<br>&emsp;<strong>return</strong>&ensp;下载的文件的绝对地址<br><strong><em>eg:</em></strong> </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dataset_path = keras.utils.get_file(<span class="string">"auto-mpg.data"</span>,<span class="string">"http://archive.ics.uci.emachine-learning-databases/auto-mpg/auto-mpg.data"</span>)</span><br></pre></td></tr></table></figure>
+<p>&nbsp;<br><code>panda.read_csv(filepath,names,na_values,comment,seq,skipinitialspace)</code></p>
+<p>&emsp;<code>filepath</code>读取的文件夹路径<br>&emsp;<code>names</code>结果的列名列表<br>&emsp;<code>na_values</code>用于替换NA/NAN的值<br>&emsp;<code>comment</code>该字符出现在首行，这一行将被全部忽略<br>&emsp;<code>sep</code>指定分隔符<br>&emsp;<code>skipinitialspace</code>忽略分隔符后的空白(true)<br>&emsp;<strong>return</strong>&ensp;dataframe(一种表型数据结构)<br><strong><em>eg:</em></strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raw_dataset = pd.read_csv(dataset_path, names=column_names, na_values=<span class="string">"?"</span>, comment=<span class="string">'\t'</span>, sep=<span class="string">" "</span>, skipinitialspace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+
+
+
 
     </div>
 
