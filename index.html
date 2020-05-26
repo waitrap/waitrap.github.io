@@ -94,13 +94,13 @@
                         <a title="WA_I" target="_blank" href="//waitrap.github.io">
                             <i class="fa fa-home fa-2x"></i></a>
                     
-                        <a title="Github"  href="//github.com/wongminho" target="_blank" rel="noopener">
+                        <a title="Github" target="_blank" href="//github.com/waitrap">
                             <i class="fa fa-github fa-2x"></i></a>
                     
-                        <a title="Weibo"  href="//weibo.com/WongMinHo" target="_blank" rel="noopener">
+                        <a title="Weibo"  href="/waitrap.github.io/">
                             <i class="fa fa-weibo fa-2x"></i></a>
                     
-                        <a title="Twitter"  href="//twitter.com/huangminhow" target="_blank" rel="noopener">
+                        <a title="Twitter"  href="/waitrap.github.io/">
                             <i class="fa fa-twitter fa-2x"></i></a>
                     
                 </div>
@@ -110,6 +110,54 @@
 </header>
       <div class="outer">
         <section id="main" class="body-wrap">
+  
+    <article id="post-essential c++学习笔记(5.4)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/waitrap.github.io/2020/05/26/essential%20c++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(5.4)/"  target="_blank"  >essential c++学习笔记(5.4)</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/waitrap.github.io/2020/05/26/essential%20c++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(5.4)/"  target="_blank" >
+                
+                <img src="http://waitrap.github.io/images/banner.jpg" alt="essential c++学习笔记(5.4)" title="essential c++学习笔记(5.4)">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                编写num_sequence class及其子类熟悉c++中继承的含义，并体会处理问题时的思路清楚要实现的功能，编写对应的函数&emsp;&emsp;本节要编写的类是用于产生多种数列的，所以要清楚数列的一些共通的功能，将其放到父类中的非虚函数，特定数列对应的功能函数也要放到父类中，但要设为虚函数，在子类中进行覆写。数列要具有的功能：返回特定位置上的元素...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2020-05-26</li>
+            
+            
+        </ul>
+        
+            <a href="/waitrap.github.io/2020/05/26/essential%20c++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(5.4)/#more" class="article-more-link"  target="_blank" >more&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
   
     <article id="post-tensorflow2.0学习笔记(6.8)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -127,35 +175,20 @@
     
     <div class="article-entry " itemprop="articleBody">
       
-            
-            <h2 id="1-函数的使用方法"><a href="#1-函数的使用方法" class="headerlink" title="1.函数的使用方法"></a>1.函数的使用方法</h2><p><code>keras.utils.get_file(fname,origin)</code></p>
-<p>&emsp;<code>fname</code>&emsp;&ensp;下载后文件保存的名字<br>&emsp;<code>origin</code>&emsp;下载的地址链接<br>&emsp;<strong>return</strong>&ensp;&emsp;下载的文件的绝对地址<br><strong><em>eg:</em></strong> </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dataset_path = keras.utils.get_file(<span class="string">"auto-mpg.data"</span>,<span class="string">"http://archive.ics.uci.emachine-learning-databases/auto-mpg/auto-mpg.data"</span>)</span><br></pre></td></tr></table></figure>
-<p>&nbsp;<br><code>panda.read_csv(filepath,names,na_values,comment,seq,skipinitialspace)</code></p>
-<p>&emsp;<code>filepath</code>&emsp;读取的文件夹路径<br>&emsp;<code>names</code>&emsp;&emsp;&ensp;结果的列名列表<br>&emsp;<code>na_values</code>&ensp;用于替换NA/NAN的值<br>&emsp;<code>comment</code>&emsp;&ensp;该字符出现在首行，这一行将被全部忽略<br>&emsp;<code>sep</code>&emsp;&emsp;&emsp;&ensp;指定分隔符<br>&emsp;<code>skipinitialspace</code>&emsp;忽略分隔符后的空白(true)<br>&emsp;<strong>return</strong>&ensp;dataframe(一种表型数据结构)<br><strong><em>eg:</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raw_dataset = pd.read_csv(dataset_path, names=column_names, na_values=<span class="string">"?"</span>, comment=<span class="string">'\t'</span>, sep=<span class="string">" "</span>, skipinitialspace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-            <div class="post-copyright">
-    <div class="content">
-        <p>最后更新： 2020年05月17日 21:20</p>
-        <p>原始链接： <a class="post-url" href="/waitrap.github.io/2020/05/15/tensorflow2.0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(6.8)/" title="tensorflow2.0学习笔记(6.8)">http://waitrap.github.io/2020/05/15/tensorflow2.0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(6.8)/</a></p>
-        <footer>
-            <a href="http://waitrap.github.io">
-                <img src="/waitrap.github.io/images/logo.png" alt="WA_I">
-                WA_I
+        <div class="article-img">
+            <a href="/waitrap.github.io/2020/05/15/tensorflow2.0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(6.8)/"  target="_blank" >
+                
+                <img src="http://waitrap.github.io/images/banner.jpg" alt="tensorflow2.0学习笔记(6.8)" title="tensorflow2.0学习笔记(6.8)">
+                
             </a>
-        </footer>
-    </div>
-</div>
-
+        </div>
+        <div class="article-feed">
+            <p>
+                1.函数的使用方法keras.utils.get_file(fname,origin)
+&emsp;fname&emsp;&ensp;下载后文件保存的名字&emsp;origin&emsp;下载的地址链接&emsp;return&ensp;&emsp;下载的文件的绝对地址eg: 
+1dataset_path = keras.utils.get_file...
+            </p>
+        </div>
       
         
     </div>
