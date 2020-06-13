@@ -136,8 +136,8 @@
         </div>
         <div class="article-feed">
             <p>
-                &emsp;&emsp;本文对机器学习中一种基本的分类与回归算法—决策树进行介绍，从具体例子出发，详述其原理，包括基本模型，决策数的剪枝，和常用的CART算法。并结合《机器学习实战》尝试将其中的python代码改写为c++代码。
-决策树的基本模型&emsp;&emsp;决策树处理的数据集中的数据包含较多的特征，基于这些特征，我们将数据分成不同的类别。这...
+                &emsp;&emsp;本文对机器学习中一种基本的分类与回归算法—决策树进行介绍，从具体例子出发，分别介绍基于信息增益的ID3，C4.5算法。
+决策树的基本模型&emsp;&emsp;决策树处理的数据集中的数据包含较多的特征，基于这些特征，我们将数据分成不同的类别。这就是决策树基本的作用。比如下面这个问题：下表是一个由15个样本组成的贷款申请训练数据，...
             </p>
         </div>
       
@@ -284,8 +284,7 @@ git简介&emsp;&emsp;git是分布式版本管理系统，所谓分布式是相�
         <div class="article-feed">
             <p>
                 &emsp;&emsp;本文以第6章第8节汽车油耗实战为例，来完整的体会一下全连接深度学习网络的构造使用过程，算是对近段时间以来神经学习网络学习的小总结
-数据集的获取和处理数据集这里使用keras模块中的get_file函数，参数为数据集名称和下载网址，返回值是数据集保存在本地的路径。代码如下：
-1dataset_path = keras.utils....
+数据集的获取和处理数据集这里使用keras模块中的get_file函数，参数为数据集名称和下载网址，返回值是数据集保存在本地的路径。代码如下：1dataset_path = keras.utils.g...
             </p>
         </div>
       
@@ -454,20 +453,5 @@ git简介&emsp;&emsp;git是分布式版本管理系统，所谓分布式是相�
 
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
